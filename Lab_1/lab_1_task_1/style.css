@@ -1,0 +1,123 @@
+* {
+  padding: none;
+  margin: none;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+}
+.card {
+  width: 600px;
+  height: 500px;
+  background: #fff;
+  padding: 0.5rem 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card .top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+}
+.data {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.data-1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.top .data img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.data .detail h4 {
+  font-size: 1.4rem;
+  line-height: 1rem;
+  color: #555;
+}
+.data .detail p {
+  font-size: 1.1rem;
+  color: #777;
+  margin-top: -1.2rem;
+}
+
+.data-1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.data-1 div h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.data-1 div p {
+  font-size: 1.1rem;
+  color: #777;
+  margin-top: -1.2rem;
+}
+
+.detail-1 p {
+  font-size: 1.1rem;
+  color: #777;
+}
+/* Button */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+button {
+  background: rgb(44, 188, 99);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 150px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
