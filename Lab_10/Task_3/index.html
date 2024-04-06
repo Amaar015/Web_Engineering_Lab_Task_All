@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font family cdn -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container_head">Registration</div>
+      <form
+        action="getuser.php"
+        method="get"
+        class="form"
+        id="myform"
+        onsubmit="return checkInputs() "
+      >
+        <div class="form__group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form__control"
+            placeholder="Enter your name"
+          />
+          <i class="material-icons"></i>
+          <span class="error"></span>
+        </div>
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form__control"
+            placeholder="Enter your Email Address"
+          />
+          <i class="material-icons"></i>
+          <span class="error"></span>
+        </div>
+        <div class="form__group">
+          <label for="number">Phone Number</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            class="form__control"
+            placeholder="Enter your Phone Number"
+          />
+          <div class="form__group">
+            <label for="">Select Color</label>
+            <div>
+              <label for="red">Red</label>
+              <input type="checkbox" id="red" name="color" value="Red" />
+              <br />
+              <label for="blue">Blue</label>
+              <input type="checkbox" id="blue" name="color" value="Blue" />
+              <br />
+              <label for="green">Green</label>
+              <input type="checkbox" id="green" name="color" value="Green" />
+              <br />
+            </div>
+          </div>
+
+          <i class="material-icons"></i>
+          <span class="error"></span>
+        </div>
+        <div class="form__group">
+          <label for="selectOption">Choose an option:</label>
+          <select id="selectOption" name="contry">
+            <option value="Pakistan">Pakistan</option>
+            <option value="Iran">Iran</option>
+            <option value="Iraq">Iraq</option>
+            <option value="Turkey">Turkey</option>
+            <option value="Syria">Syria</option>
+            <option value="Saudi Arabia">Saudi Arabia</option>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <label for="pass">Password</label>
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            class="form__control"
+            placeholder="Enter your Password"
+          />
+          <i class="material-icons"></i>
+          <span class="error"></span>
+        </div>
+        <div class="form__group">
+          <label for="cpass">Confirm Password</label>
+          <input
+            type="password"
+            name="cpass"
+            id="cpass"
+            class="form__control"
+            placeholder="Enter your Confirm Password"
+          />
+          <i class="material-icons"></i>
+          <span class="error"></span>
+        </div>
+        <div class="form__group">
+          <input type="submit" id="submit" class="btn" />
+        </div>
+      </form>
+    </div>
+    <script>
+      // Validation
+
+      function checkInputs() {
+        const username = document.getElementById("name");
+        const email = document.getElementById("email");
+        const numb = document.getElementById("number");
+        const pass = document.getElementById("pass");
+        const cpass = document.getElementById("cpass");
+        var span = document.getElementsByClassName("error");
+        const nameValue = username.value.trim();
+        const emailValue = email.value.trim();
+        const numbValue = numb.value.trim();
+        const passdValue = pass.value.trim();
+        const cpassValue = cpass.value.trim();
+        if (nameValue === "") {
+          alert("Name is required!");
+          return false;
+        } else {
+          // return false;
+        }
+        if (emailValue === "") {
+          alert("Email is Required");
+          return false;
+        } else {
+        }
+        if (numbValue === "") {
+          alert("Mobile No is required");
+          return false;
+        } else {
+        }
+        if (passdValue === "") {
+          alert("Password is Required");
+          return false;
+        } else {
+        }
+        if (cpassValue === "") {
+          alert("Confirm password is required");
+          return false;
+        } else {
+        }
+      }
+    </script>
+  </body>
+</html>
