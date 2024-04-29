@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./store.css" />
+  </head>
+  <body>
+    <h2>Product Form</h2>
+    <form action="./store.php" method="post" enctype="multipart/form-data">
+      <label for="name">Product Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="description">Description:</label><br />
+      <textarea id="description" name="description" required></textarea
+      ><br /><br />
+
+      <label for="price">Price:</label><br />
+      <input type="number" id="price" name="price" required /><br /><br />
+
+      <label for="images">Image:</label><br />
+      <input type="file" id="images" name="images" required /><br /><br />
+
+      <input type="submit" id="save" value="Submit" />
+    </form>
+    <!-- <script>
+      document
+        .getElementById("productForm")
+        .addEventListener("submit", SaveProduct);
+
+      function SaveProduct(e) {
+        e.preventDefault();
+
+        var name = document.getElementById("name").value;
+        var description = document.getElementById("description").value;
+        var price = document.getElementById("price").value;
+        var image = document.getElementById("images").files[0];
+        var ImageName = image.name;
+        var ImageSize = image.size;
+        var ImageType = image.type;
+        var param = "";
+        param +=
+          "name=" +
+          name +
+          "&description=" +
+          description +
+          "&price=" +
+          price +
+          "&images=" +
+          ImageName +
+          "&size=" +
+          ImageSize +
+          "&type=" +
+          ImageType;
+
+        var xhr = new XMLHttpRequest();
+        console.log(param);
+
+        xhr.open("POST", "store.php", true);
+        xhr.setRequestHeader(
+          "Content-type",
+          "application/x-www-form-urlencoded"
+        );
+
+        xhr.onload = function () {
+          if (this.status == 200) {
+            console.log(this.responseText);
+          }
+        };
+        xhr.send(param);
+      }
+    </script> -->
+  </body>
+</html>

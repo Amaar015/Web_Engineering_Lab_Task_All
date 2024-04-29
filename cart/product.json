@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Vivo V-20",
+    "color": "white",
+    "description": "Capture life's moments with the vivo Y20. Equipped with a 6.51-inch HD+ display, SDM 460 processor, front 8MP / rear 13MP+2MP+2MP cameras",
+    "price": "$34.00",
+    "delivery": "2-day delivery",
+    "image": "./pro-1.png"
+  },
+  {
+    "name": "Vivo V-20",
+    "color": "white",
+    "description": "Capture life's moments with the vivo Y20. Equipped with a 6.51-inch HD+ display, SDM 460 processor, front 8MP / rear 13MP+2MP+2MP cameras",
+    "price": "$34.00",
+    "delivery": "2-day delivery",
+    "image": "pro-2.png"
+  },
+  {
+    "name": "Vivo V-20",
+    "color": "white",
+    "description": "Capture life's moments with the vivo Y20. Equipped with a 6.51-inch HD+ display, SDM 460 processor, front 8MP / rear 13MP+2MP+2MP cameras",
+    "price": "$34.00",
+    "delivery": "2-day delivery",
+    "image": "pro-3.png"
+  },
+  {
+    "name": "Vivo V-20",
+    "color": "white",
+    "description": "Capture life's moments with the vivo Y20. Equipped with a 6.51-inch HD+ display, SDM 460 processor, front 8MP / rear 13MP+2MP+2MP cameras",
+    "price": "$34.00",
+    "delivery": "2-day delivery",
+    "image": "pro-4.png"
+  },
+  {
+    "name": "Vivo V-20",
+    "color": "white",
+    "description": "Capture life's moments with the vivo Y20. Equipped with a 6.51-inch HD+ display, SDM 460 processor, front 8MP / rear 13MP+2MP+2MP cameras",
+    "price": "$34.00",
+    "delivery": "2-day delivery",
+    "image": "pro-5.png"
+  },
+  {
+    "name": "Vivo V-20",
+    "color": "white",
+    "description": "Capture life's moments with the vivo Y20. Equipped with a 6.51-inch HD+ display, SDM 460 processor, front 8MP / rear 13MP+2MP+2MP cameras",
+    "price": "$34.00",
+    "delivery": "2-day delivery",
+    "image": "pro-6.png"
+  }
+]
